@@ -1,0 +1,28 @@
+GET http://localhost:3001/subscriber
+
+
+###
+POST http://localhost:3001/subscriber
+Content-Type: application/json
+
+{
+    "name": "Bryan",
+    "subscribedToChannel": "web dev simplified"
+}
+
+###
+
+GET http://localhost:3001/subscriber/6255799263c97087c4f9e9b0
+
+###
+DELETE  http://localhost:3001/subscriber/6255795863c97087c4f9e9a4
+
+###
+
+PATCH http://localhost:3001/subscriber/6255799263c97087c4f9e9b0
+Content-Type: application/json
+
+{
+    "name": "Swag bt",
+    "subscribedToChannel" : "Web Dev Simplified <3"
+}
